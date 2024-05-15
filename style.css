@@ -9,20 +9,63 @@ html{
     font-optical-sizing: auto;
     font-style: normal;
 }
+h1{
+    font-size: 3rem;
+}
+header{
+    background: linear-gradient(45deg, #d884e5, #617dd0, #6fb6d7, #78d26e);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .header__logo{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 10rem;
-    align-content: flex-start;
-    align-items: center;
+    height: 8rem;
     padding-left: 3rem;
-    background-color:wheat;
+    justify-content: flex-start;
+    align-items: center; 
 }
 .header__logo img{
-    width: 4rem;
+    width: 3rem;
 }
 .header__logo h1{
     white-space: nowrap;
     padding-left: 2rem;
+    color: white;
+    font-weight: 800;
+}
+.header__search{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    padding-right: 1rem;
+    width: 35rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: white;
+}
+.header__search__input{
+    border: none;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 3rem;
+    padding-left: 1rem;
+}
+.header__search__input:focus{
+    outline: none;
+}
+.header__search__button img {
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+} 
+.header__search__button:hover {
+    color: rgb(162, 163, 163);
 }
