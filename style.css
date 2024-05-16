@@ -100,7 +100,7 @@ button {
 }
 
 /* Phones (portrait) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
     html {
         font-size: 8px;
     }
@@ -116,6 +116,10 @@ button {
     }
     .header__search__input {
         width: 20rem;
+    }
+    .header__search__input::placeholder {
+        color: gray; 
+        font-size: 1.6rem;
     }
     .header__search__button img {
         width: 3rem;
