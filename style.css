@@ -39,7 +39,6 @@ header{
 .header__search{
     display: flex;
     flex-direction: row;
-    padding-right: 1rem;
     width: 35rem;
     height: 5rem;
     border-radius: 3rem;
@@ -63,7 +62,13 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    width: 6rem;
+    border-radius: 0rem 3rem 3rem 0rem;
+    transition: 0.5s;
 } 
+button:hover{
+    background-color: #e0e0e0;
+}
 .header__search__button:hover {
     color: rgb(162, 163, 163);
 }
@@ -71,7 +76,6 @@ button {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
     background: linear-gradient(70deg, rgb(31, 196, 147), rgb(185, 131, 140), rgb(210, 50, 197));
 }
@@ -86,13 +90,7 @@ button {
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-#main_section div h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-top: 1rem;
-}
-  
+}  
 #main_section div img {
     width: 90%;
     height: 90%;

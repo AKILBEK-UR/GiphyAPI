@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   function searchGIF(searchTerm) {
     const API_KEY = "AFBVUrIVL3we3Ry7nnLQqziNLbtuDMc3";
-    const limit = 9;
+    const limit = 12;
     const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${searchTerm}&limit=${limit}&offset=0`;
     fetch(endpoint)
       .then((response) => {
@@ -46,12 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
     gifsData.forEach((gif) => {
       const div = document.createElement("div");
       const img = document.createElement("img");
-      const h2 = document.createElement("h2");
       img.src = gif.images.downsized.url;
       img.alt = gif.title;
-      h2.textContent = gif.title;
       div.appendChild(img);
-      div.appendChild(h2);
       gifContainer.appendChild(div);
     });
   }
