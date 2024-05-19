@@ -1,4 +1,4 @@
-git document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("header__search__input");
     console.log(searchInput);
     const searchButton = document.getElementById("header__search__button");
