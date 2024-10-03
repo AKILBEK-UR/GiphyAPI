@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/image/giphyAPI__logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>GiphyAPI</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="./public/image/giphyAPI__logo.svg">
+            <h1>GIPHY API</h1>
+        </div>
+        <h2 class="h2" style="color: white;letter-spacing: 0.2rem;">
+            Look for trending GIFs
+        </h2>
+        <div class="header__search">
+            <div class="header__search">
+                <input
+                    type="text"
+                    class="header__search__input"
+                    id = "header__search__input"
+                    placeholder="Search..."
+                />
+                <button type="submit" class="header__search__button" id="header__search__button">
+                    <img src="./public/image/search.svg">
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="main_section" id="main_section"></section>
+    <script src="./script.js"></script>
+</body>
+</html>
